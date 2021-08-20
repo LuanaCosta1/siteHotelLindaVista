@@ -1,0 +1,517 @@
+:root {
+    --primary-color: #1C6E8C;
+    --secondary-color: #274156;
+    --dawis-gray-color: #605856;
+    --black-color: #232327;
+    --black-color-two: #232327;
+    --light-gray-color: #D0CCD0;
+    --white-color: #FBFCFF;
+    --white-color-two: #FBFCFF;
+}
+
+.dark-theme {
+    --black-color: #e6e6e6;
+    --white-color: #232327;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+
+nav,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--black-color);
+}
+
+/* HEADER */
+
+.logo{
+    height: 50px;
+}
+
+
+header {
+    height: 10vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 70px;
+    background-color: var(--white-color);
+}
+
+header img {
+    height: 10vh;
+}
+
+header nav {
+    display: flex;
+}
+
+header li a {
+    color: var(--black-color);
+}
+
+header li a:hover {
+    color: var(--light-gray-color);
+}
+
+header li {
+    margin: 0 15px;
+}
+
+header li:first-child {
+    margin-left: 0;
+}
+
+header li:last-child {
+    margin-right: 0;
+}
+
+#darkIcon {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+
+    header img {
+        margin-bottom: 15px;
+    }
+
+    header li a {
+        font-size: 0.8rem;
+    }
+}
+
+.conheca-o-hotel {
+    background-image: url(../imagens/paolo-nicolello-2gOxKj594nM-unsplash.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #FBFCFF;
+    text-align: center;
+}
+
+.conheca-o-hotel h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.conheca-o-hotel h3 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.conheca-o-hotel .btn {
+    background-color: #FBFCFF;
+    color: var(--primary-color);
+    padding: 10px 25px;
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.conheca-o-hotel .btn:hover {
+    background-color: var(--light-gray-color);
+}
+
+
+@media (max-width:700px) {
+    .conheca-o-hotel h1 {
+        font-size: 2rem;
+    }
+
+    .conheca-o-hotel h3 {
+        font-size: 1.2rem;
+    }
+
+    .conheca-o-hotel .btn {
+        font-size: 0.8rem;
+    }
+}
+
+.sobre {
+    padding: 100px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sobre h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.sobre h3 {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.sobre hr {
+    width: 200px;
+    height: 2px;
+    background-color: var(--black-color);
+    margin-bottom: 70px;
+    border: none;
+}
+
+.sobre .fotos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobre .fotos li {
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.sobre .fotos #img01 {
+    background-image: url(../imagens/tholaal-mohamed-8sKTHeGgrUM-unsplash.jpg);
+}
+
+.sobre .fotos #img02 {
+    background-image: url(../imagens/sara-dubler-Koei_7yYtIo-unsplash.jpg);
+}
+
+.sobre .fotos #img03 {
+    background-image: url(../imagens/edvin-johansson-rlwE8f8anOc-unsplash.jpg);
+}
+
+.sobre .fotos #img04 {
+    background-image: url(../imagens/alexander-kaunas-TAgGZWz6Qg8-unsplash.jpg);
+}
+
+.sobre .fotos #img05 {
+    background-image: url(../imagens/the-anam-_twiIcIsp2s-unsplash.jpg);
+}
+
+.sobre .fotos #img06 {
+    background-image: url(../imagens/adriana-saraceanu-_ixNdO62FSg-unsplash.jpg);
+}
+
+.sobre .fotos li.small {
+    flex-basis: 30%;
+}
+
+.sobre .fotos li.large {
+    flex-basis: 40%;
+}
+
+.sobre .fotos li.larger {
+    flex-basis: 60%;
+}
+
+@media (max-width:700px) {
+
+    .sobre .fotos li.small,
+    .sobre .fotos li.large,
+    .sobre .fotos li.larger {
+        flex-basis: 100%;
+    }
+
+    .sobre h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .sobre h3 {
+        font-size: 0.8rem;
+    }
+}
+
+.comodidades {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    padding: 100px 50px;
+    color: var(--white-color-two);
+}
+
+.comodidades h1 {
+    font-size: 2rem;
+}
+
+.comodidades hr {
+    width: 200px;
+    height: 2px;
+    background-color: var(--white-color-two);
+    margin: 50px;
+    border: none;
+}
+
+.comodidades-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.comodidades-grid li {
+    width: 400px;
+    padding: 25px;
+    text-align: center;
+}
+
+.comodidades-grid li i {
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+
+.comodidades-grid li h4 {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+@media (max-width:800px) {
+    .comodidades-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .comodidades h1 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .comodidades-grid li {
+        width: 300px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .comodidades-grid li i {
+        font-size: 2rem;
+    }
+
+    .comodidades-grid li h4 {
+        font-size: 1.2rem;
+    }
+
+    .comodidades-grid li p {
+        font-size: 0.9rem;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 50px;
+    color: var(--black-color);
+}
+
+footer #volte {
+    padding: 0;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+footer .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 30px;
+    width: 100%;
+}
+
+.footer-grid .contato,
+.footer-grid .hospedes,
+.footer-grid .institucional,
+.footer-grid .redes {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 250px;
+}
+
+.footer-grid .contato h2,
+.footer-grid .institucional h2,
+.footer-grid .hospedes h2,
+.footer-grid .redes h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-grid .redes li a i {
+    margin-right: 5px;
+}
+
+.signed {
+    padding: 10px 50px;
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: var(--white-color-two);
+    text-align: center;
+}
+
+footer hr {
+    width: 50%;
+    height: 1px;
+    background-color: var(--black-color);
+    border: none;
+}
+
+footer h1 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 20px 0;
+    text-align: center;
+}
+
+@media (max-width:800px) {
+    footer .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 30px;
+        width: 100%;
+    }
+
+    .footer-grid .contato,
+    .footer-grid .hospedes,
+    .footer-grid .institucional,
+    .footer-grid .redes {
+        padding: 20px 10px;
+    }
+}
+
+.reservas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 80px;
+    color: var(--black-color);
+}
+
+.reservas h1{
+    font-size: 2rem;
+}
+
+.reservas-grid{
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.reserva-card{
+    width: 350px;
+    text-align: justify;
+    background-color: var(--white-color-two);
+    color: var(--black-color-two);
+    border: 3px solid var(--primary-color);
+    margin: 20px;
+    
+}
+
+.reserva-card img{
+    width: 100%;
+}
+
+.card-info{
+    padding: 10px 20px;
+}
+
+.card-info figcaption{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.card-info hr{
+    margin: 2px;
+}
+
+.card-info p{
+    padding: 10px 0;
+}
+
+.card-info i{
+    padding-right: 5px;
+    font-size: 1rem;
+}
+
+.card-info h4{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.avaliacao{
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 2px;
+}
+
+.saiba-mais{
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 10px;
+}
+
+.saiba-mais a{
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--white-color-two);
+    padding: 5px;
+
+}
+
+@media (max-width:800px) {
+    .reservas{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 80px;
+        color: var(--black-color);
+    }
+    
+    .reservas h1{
+        font-size: 1.2rem;
+    }
+    
+    .reservas-grid{
+        flex-direction: column;
+    }
+
+    .reserva-card{
+        width: 300px;
+    }
+}
